@@ -946,150 +946,216 @@
 // console.log(numLookup(35))
 
 // Manipulating Complex Objects
-var myMusic = [
-  {
-    'artist': 'Billy Joel',
-    'title': 'Piano Man',
-    'release_year': 1973,
-    'formats': [
-      'CD',
-      '8T',
-      'LP'
-    ],
-    'gold': true
-  },
-  {
-    'artist': 'The Black Keys',
-    'title': 'Lets Rock',
-    'release_year': 2019,
-    'formats': [
-      'CD',
-      'LP'
-    ]
-  }
-]
+// var myMusic = [
+//   {
+//     'artist': 'Billy Joel',
+//     'title': 'Piano Man',
+//     'release_year': 1973,
+//     'formats': [
+//       'CD',
+//       '8T',
+//       'LP'
+//     ],
+//     'gold': true
+//   },
+//   {
+//     'artist': 'The Black Keys',
+//     'title': 'Lets Rock',
+//     'release_year': 2019,
+//     'formats': [
+//       'CD',
+//       'LP'
+//     ]
+//   }
+// ]
 
-myMusic
+// myMusic
 
-//Accessing Nested Objects
-var myStorage = {
-  'car': {
-    'inside': {
-      'glove box': 'maps',
-      'passenger seat': 'crumbs'
-    },
-    'outside': {
-      'trunk': 'jack'
-    }
-  }
-};
-var gloveBoxContents = myStorage.car.inside['glove box'];
-gloveBoxContents
+// //Accessing Nested Objects
+// var myStorage = {
+//   'car': {
+//     'inside': {
+//       'glove box': 'maps',
+//       'passenger seat': 'crumbs'
+//     },
+//     'outside': {
+//       'trunk': 'jack'
+//     }
+//   }
+// };
+// var gloveBoxContents = myStorage.car.inside['glove box'];
+// gloveBoxContents
 
-//Accessing Nested Arrays
-var myPlants = [
-  {
-    type: 'flowers',
-    list: [
-      'rose',
-      'tulip',
-      'mums'
-    ]
-  },
-  {
-    type: 'trees',
-    list:[
-      'fir',
-      'pine',
-      'birch'
-    ]
-  }
-];
-var mySecondTree = myPlants[1].list[1];
-mySecondTree
+// //Accessing Nested Arrays
+// var myPlants = [
+//   {
+//     type: 'flowers',
+//     list: [
+//       'rose',
+//       'tulip',
+//       'mums'
+//     ]
+//   },
+//   {
+//     type: 'trees',
+//     list:[
+//       'fir',
+//       'pine',
+//       'birch'
+//     ]
+//   }
+// ];
+// var mySecondTree = myPlants[1].list[1];
+// mySecondTree
 
-// Iterate w/ While Loops
-// var myArray = [];
+// // Iterate w/ While Loops
+// // var myArray = [];
 
-// var i = 0
-// while (i = 0; i < 5; i++) {
-//   myArray.push(i);
+// // var i = 0
+// // while (i = 0; i < 5; i++) {
+// //   myArray.push(i);
   
+// // }
+
+// // console.log(myArray)
+
+// // Iterate Using For Loops
+// var ourArray = [];
+
+// for (var i = 0; i < 5; i++) {
+//   ourArray.push(i);
 // }
 
-// console.log(myArray)
+// var myArray = [];
 
-// Iterate Using For Loops
-var ourArray = [];
+// for (var i = 1; i < 6; i ++) {
+//   myArray.push(i);
+// }
 
-for (var i = 0; i < 5; i++) {
-  ourArray.push(i);
-}
+// myArray
 
-var myArray = [];
+// // Iterate Odd Numbers with a For Loop
+// var evenArray = [];
+// for (var i = 0; i < 20; i += 2) {
+//   evenArray.push(i);
+// }
+// evenArray
 
-for (var i = 1; i < 6; i ++) {
-  myArray.push(i);
-}
+// var oddArray = [];
+// for (var i = 1; i < 20; i += 2) {
+//   oddArray.push(i);
+// }
+// oddArray
 
-myArray
+// // Generate Random Fractions
+// function randomFunction() {
 
-// Iterate Odd Numbers with a For Loop
-var evenArray = [];
-for (var i = 0; i < 20; i += 2) {
-  evenArray.push(i);
-}
-evenArray
+//   return Math.random();
+// }
+// console.log(randomFunction())
 
-var oddArray = [];
-for (var i = 1; i < 20; i += 2) {
-  oddArray.push(i);
-}
-oddArray
+// // Generate Random Whole Numbers
+// var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
 
-// Generate Random Fractions
-function randomFunction() {
+// function randomWholeNum() {
 
-  return Math.random();
-}
-console.log(randomFunction())
+//   return Math.floor (Math.random() * 10);
+// }
 
-// Generate Random Whole Numbers
-var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+// console.log(randomWholeNum());
 
-function randomWholeNum() {
+// // Generate Random Whole Number w/in a Range
+// function ourRandomRange(ourMin, ourMax) {
 
-  return Math.floor (Math.random() * 10);
-}
+//   return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+// }
 
-console.log(randomWholeNum());
+// ourRandomRange(1, 9);
 
-// Generate Random Whole Number w/in a Range
-function ourRandomRange(ourMin, ourMax) {
-
-  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
-}
-
-ourRandomRange(1, 9);
-
-function randomRange(myMin, myMax) {
+// function randomRange(myMin, myMax) {
   
-  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+//   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+// }
+
+// var myRandom = randomRange(5, 15);
+
+// console.log(myRandom)
+
+// // Use the parseInt Function
+// function convertToInt(str) {
+//   return parseInt(str)
+// }
+// console.log(convertToInt("53"))
+
+// function convToInt(str) {
+//   return parseInt(str, 2)
+// }
+// console.log(convToInt('10110''));
+
+// // Use the Conditional (Ternary) Operator
+// function checkEqual(a, b) {
+//   if(a === b) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(checkEqual(1, 2));
+
+// function checkEqual(a, b) {
+//   return a === b ? true : false;
+// }
+// console.log(checkEqual(1, 2))
+
+// Multiple Ternery Operators
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
 }
+console.log(checkSign(0))
 
-var myRandom = randomRange(5, 15);
+var catName = "Solo";
+var quote;
 
-console.log(myRandom)
+// Var vs Let keywords
+var catName = "Beau";
+function catTalk() {
+  'use strict'; // catches common coding mistakes like setting a variable without declaring with var, let, or const
 
-// Use the parseInt Function
-function convertToInt(str) {
-  return parseInt(str)
+  catName = "Oliver";
+  quote = catName + " says Meow!";
 }
-console.log(convertToInt("53"))
+console.log(catTalk());
 
+// Mutate an Array Declared with const
+const s = [5, 7, 2];
+function editInPlace() {
+  "use strict";
+  // s = [2, 5, 7];
+  s[0] = 2;
+  s[1] = 5;
+  s[2] = 7;
+}
+editInPlace();
+console.log(s);
 
+// Prevent Object Mutation using Object.freeze()
+function freezeObj() {
+  "use strict";
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
 
+Object.freeze(MATH_CONSTANTS)
 
+  try {
+    MATH_CONSTANTS.PI = 99;    
+  } catch( ex ) {
+    console.log(ex);    
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI)
 
 
 
