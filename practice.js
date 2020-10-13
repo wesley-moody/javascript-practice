@@ -516,7 +516,7 @@
 //   } else {
 //     return "Greater than or equal to 10"
 //   }
-  
+
 // }
 
 // console.log(orderMyLogic(4));
@@ -552,13 +552,13 @@
 //   } else if (strokes <= par - 2) {
 //     return names[1]
 //   } else if (strokes == par - 1) {
-//     return names[2] 
+//     return names[2]
 //   } else if (strokes == par) {
-//     return names[3] 
+//     return names[3]
 //   } else if (strokes == par + 1) {
-//     return names[4] 
+//     return names[4]
 //   } else if (strokes == par + 2) {
-//     return names[5] 
+//     return names[5]
 //   } else {
 //     return names[6]
 //   }
@@ -570,7 +570,7 @@
 // function caseInSwitch(val) {
 //   var answer = "";
 //   switch(val) {
-//     case 1:  
+//     case 1:
 //       answer = "alpha";
 //       break;
 //     case 2:
@@ -599,7 +599,7 @@
 //       break;
 //     case "b":
 //       answer = "bird";
-//       break;  
+//       break;
 //     case "c":
 //       answer = "cat";
 //       break;
@@ -635,7 +635,7 @@
 //       answer = "Go home, you're drunk";
 //       break;
 //   }
-//   return answer; 
+//   return answer;
 // }
 
 // console.log(sequentialSizes(33))
@@ -648,7 +648,7 @@
 //       answer = "Marley";
 //       break
 //     case 42:
-//       answer = "Jackie Robinson";      
+//       answer = "Jackie Robinson";
 //       break;
 //     case 1:
 //       answer = "There is no #1";
@@ -689,261 +689,415 @@
 
 // console.log(abTest(-2, 2))
 
-// Counting Cards
-var count = 0
-function cc(card) {
-  switch(card) {
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      count++;
-      break;
-    case 10:
-    case "J":
-    case "Q":
-    case "K":
-    case "A":
-      count --;
-      break;
+// // Counting Cards
+// var count = 0
+// function cc(card) {
+//   switch(card) {
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//       count++;
+//       break;
+//     case 10:
+//     case "J":
+//     case "Q":
+//     case "K":
+//     case "A":
+//       count --;
+//       break;
+//   }
+//   var holdbet = 'Hold'
+//   if (count > 0) {
+//     holdbet = 'Bet'
+//   }
+
+//   return count + " " + holdbet;
+// }
+// cc(2); cc(3); cc(4); cc('K'); cc('A');
+// console.log(cc(3))
+
+// // Build JS Objects
+// var ourDog = {
+//   "name": "Paige",
+//   "legs": 3,
+//   "tails": 2,
+//   "friends": []
+// }
+
+// // Accessing Object Properties with Dot Notation
+// var testObj = {
+//   "hat": "ballcap",
+//   "shirt": 'jersey',
+//   'shoes': 'cleats'
+// };
+
+// var hatValue = testObj.hat;
+// var shirtValue = testObj.shirt;
+// console.log(hatValue, shirtValue)
+
+// // Accessing Object Properties with Bracket Notation
+// var testObj = {
+//   "an entree": "hamburger",
+//   "my side": 'fries',
+//   'the drink': 'water'
+// };
+// var entreeValue = testObj["an entree"];
+// var drinkValue = testObj['the drink'];
+// console.log(entreeValue, drinkValue)
+
+// // Accessing Object Properties with Variables
+// var testObj = {
+//   12: 'Namath',
+//   16: 'Montana',
+//   19: 'Dawson'
+// };
+// var playerNumber = 19;
+// var player = testObj[playerNumber]
+// console.log(player)
+
+// // Updating Object Properties
+// var ourDog = {
+//   'name': 'Paige',
+//   'legs': 4,
+//   'tails': 1,
+//   'friends': ["All of them!"]
+// };
+// ourDog.name = "Satchell Paige"
+// console.log(ourDog.name)
+// console.log(ourDog.friends)
+
+// // Add New Properties to an Object
+// var ourDog = {
+//   'name': 'Paige',
+//   'legs': 4,
+//   'tails': 1,
+//   'friends': ["All of them!"]
+// };
+// ourDog.bark = 'boof!';
+// console.log(ourDog)
+
+// var myDog = {
+//   'name': 'Paige',
+//   'legs': 4,
+//   'tails': 1,
+//   'friends': ["All of them!"]
+// };
+
+// myDog['bark'] = 'woof woof'
+// myDog
+
+// // Delete Properties From an Object
+// var ourDog = {
+//   'name': 'Paige',
+//   'legs': 4,
+//   'tails': 1,
+//   'friends': ["All of them!"],
+//   'bark': 'boof!'
+// };
+// ourDog
+// delete ourDog.bark;
+// ourDog
+
+// // Using Objects for Lookups
+// function phoneticlookup(val) {
+//   var result = "";
+
+//   var lookup = {
+//     "alpha": "Adams",
+//     'bravo': 'Boston',
+//     'charlie': 'Chicago',
+//     'delta': 'Denver',
+//     'echo': 'Easy',
+//     'foxtrot': 'Frank',
+//   };
+//   result = lookup[val];
+//   return result;
+// }
+// console.log(phoneticlookup('charlie'))
+
+// // Testing Objects for Properties
+// var myObj = {
+//   gift: 'pony',
+//   pet: 'kitten',
+//   bed: 'sleigh'
+// };
+
+// function checkObj(checkProp) {
+//   if (myObj.hasOwnProperty(checkProp)) {
+//     return myObj[checkProp];
+//   } else {
+//     return "You Play Ball Like a Girl"
+//   }
+// }
+
+// console.log(checkObj(''))
+
+// let athletes = {
+//   0: "Russell Westbrook",
+//   1: 'Warren Moon',
+//   2: 'Derick Jeter',
+//   3: 'Babe Ruth',
+//   4: 'Alex Gordon',
+//   5: 'George Brett',
+//   6: "Bill Russell",
+//   7: 'Michael Bishop',
+//   8: 'Troy Aikman',
+//   9: "Ted Williams",
+//   10: 'Trent Green',
+//   11: "Eli Manning",
+//   12: 'Tom Brady',
+//   13: "Kurt Warner",
+//   14: "Pete Rose",
+//   15: 'Patrick Mahomes',
+//   16: 'Len Dawson',
+//   17: "Dizzy Dean",
+//   18: 'Peyton Manning',
+//   19: 'Johnny Unitas',
+//   20: "Barry Sanders",
+//   21: "Tim Duncan",
+//   22: 'Emmit Smith',
+//   23: 'Michael Jordan',
+//   24: 'Kobe Bryant',
+//   25: 'Jamaal Charles',
+//   26: 'Eddie George',
+//   27: 'Larry Johnson',
+//   28: "Marshall Faulk",
+//   29: 'Satchel Paige',
+//   30: 'Nolan Ryan',
+//   31: 'Reggie Miller',
+//   32: 'Magic Johnson',
+//   33: 'Kareem Abdul-Jabar',
+//   34: 'Shaq',
+//   35: 'Kevin Durant',
+//   36: 'Jerome Bettis',
+//   37: "Joe Delaney",
+//   38: 'Curt Schilling',
+//   39: 'Larry Csonka',
+//   40: 'Gale Sayers',
+//   41: 'Dirk Nowitzki',
+//   42: 'Jackie Robinson',
+//   43: 'Richard Petty',
+//   44: 'Hank Aaron',
+//   45: 'Pedro Martinez',
+//   46: 'Andy Pettitte',
+//   47: "Tom Glavine",
+//   48: 'Jimmie Johnson',
+//   49: 'Daniel Sorensen',
+//   50: 'Justin Houston',
+//   51: "Randy Johnson",
+//   52: 'Ray Lewis',
+//   53: "Don Drysdale",
+//   54: 'Brian Urlacher',
+//   55: 'Frank Clark',
+//   56: 'Derrick Johnson',
+//   57: "Clay Matthews",
+//   58: 'Derrick Thomas',
+//   59: "Jack Ham",
+//   60: "Otto Graham",
+//   61: 'Tim Grunhard',
+//   62: 'Casey Wiegman',
+//   63: 'Willie Lanier',
+//   64: "Jerry Kramer",
+//   65: "Ryan Lilja",
+//   66: "Mario Lemieux",
+//   67: "Reggie McKenzie",
+//   68: 'Will Shields',
+//   69: 'Jared Allen',
+//   70: "Sam Huff",
+//   71: 'Mitchell Schwartz',
+//   72: 'Eric Fisher',
+//   73: "John Hannah",
+//   74: "Merlin Olsen",
+//   75: "Mean Joe Greene",
+//   76: "Marion Motley",
+//   77: 'Willie Roaf',
+//   78: 'Bobby Bell',
+//   79: 'Dave Szott',
+//   80: 'Jerry Rice',
+//   81: 'Terrell Owens',
+//   82: 'Dante Hall',
+//   83: "Andre Reed",
+//   84: 'Randy Moss',
+//   85: "Mark Boerigter",
+//   86: "Buck Buchanan",
+//   87: 'Travis Kelce',
+//   88: 'Tony Gonzalez',
+//   89: "Otis Taylor",
+//   90: 'Neil Smith',
+//   91: 'Dennis Rodman',
+//   92: 'Reggie White',
+//   93: "Dwight Freeney",
+//   94: "Charles Haley",
+//   95: 'Chris Jones',
+//   96: "Cortez Kennedy",
+//   97: "Kurt Busch",
+//   98: "Tony Siragusa",
+//   99: 'Wayne Gretzki'
+// }
+// function numLookup(num) {
+//   if(athletes.hasOwnProperty(num)) {
+//     return athletes[num];
+//   } else {
+//     return "Nobody ever wore that number"
+//   }
+// }
+// console.log(numLookup(35))
+
+// Manipulating Complex Objects
+var myMusic = [
+  {
+    'artist': 'Billy Joel',
+    'title': 'Piano Man',
+    'release_year': 1973,
+    'formats': [
+      'CD',
+      '8T',
+      'LP'
+    ],
+    'gold': true
+  },
+  {
+    'artist': 'The Black Keys',
+    'title': 'Lets Rock',
+    'release_year': 2019,
+    'formats': [
+      'CD',
+      'LP'
+    ]
   }
-  var holdbet = 'Hold'
-  if (count > 0) {
-    holdbet = 'Bet'
+]
+
+myMusic
+
+//Accessing Nested Objects
+var myStorage = {
+  'car': {
+    'inside': {
+      'glove box': 'maps',
+      'passenger seat': 'crumbs'
+    },
+    'outside': {
+      'trunk': 'jack'
+    }
   }
-
-  return count + " " + holdbet;
-}
-cc(2); cc(3); cc(4); cc('K'); cc('A');
-console.log(cc(3))
-
-// Build JS Objects
-var ourDog = {
-  "name": "Paige",
-  "legs": 3,
-  "tails": 2,
-  "friends": []
-}
-
-// Accessing Object Properties with Dot Notation
-var testObj = {
-  "hat": "ballcap",
-  "shirt": 'jersey',
-  'shoes': 'cleats'
 };
+var gloveBoxContents = myStorage.car.inside['glove box'];
+gloveBoxContents
 
-var hatValue = testObj.hat;
-var shirtValue = testObj.shirt;
-console.log(hatValue, shirtValue)
-
-// Accessing Object Properties with Bracket Notation
-var testObj = {
-  "an entree": "hamburger",
-  "my side": 'fries',
-  'the drink': 'water'
-};
-var entreeValue = testObj["an entree"];
-var drinkValue = testObj['the drink'];
-console.log(entreeValue, drinkValue)
-
-// Accessing Object Properties with Variables
-var testObj = {
-  12: 'Namath',
-  16: 'Montana',
-  19: 'Dawson'
-};
-var playerNumber = 19;
-var player = testObj[playerNumber]
-console.log(player)
-
-// Updating Object Properties
-var ourDog = {
-  'name': 'Paige',
-  'legs': 4,
-  'tails': 1,
-  'friends': ["All of them!"]
-};
-ourDog.name = "Satchell Paige"
-console.log(ourDog.name)
-console.log(ourDog.friends)
-
-// Add New Properties to an Object
-var ourDog = {
-  'name': 'Paige',
-  'legs': 4,
-  'tails': 1,
-  'friends': ["All of them!"]
-};
-ourDog.bark = 'boof!';
-console.log(ourDog)
-
-var myDog = {
-  'name': 'Paige',
-  'legs': 4,
-  'tails': 1,
-  'friends': ["All of them!"]
-};
-
-myDog['bark'] = 'woof woof'
-myDog
-
-// Delete Properties From an Object
-var ourDog = {
-  'name': 'Paige',
-  'legs': 4,
-  'tails': 1,
-  'friends': ["All of them!"],
-  'bark': 'boof!'
-};
-ourDog
-delete ourDog.bark;
-ourDog
-
-// Using Objects for Lookups
-function phoneticlookup(val) {
-  var result = "";
-
-  var lookup = {
-    "alpha": "Adams",
-    'bravo': 'Boston',
-    'charlie': 'Chicago',
-    'delta': 'Denver',
-    'echo': 'Easy',
-    'foxtrot': 'Frank',  
-  };
-  result = lookup[val];
-  return result;
-}
-console.log(phoneticlookup('charlie'))
-
-// Testing Objects for Properties
-var myObj = {
-  gift: 'pony',
-  pet: 'kitten',
-  bed: 'sleigh'
-};
-
-function checkObj(checkProp) {
-  if (myObj.hasOwnProperty(checkProp)) {
-    return myObj[checkProp];
-  } else {
-    return "You Play Ball Like a Girl"
-  }  
-}
-
-console.log(checkObj(''))
-
-
-let athletes = {
-  0: "Russell Westbrook",
-  1: 'Warren Moon',
-  2: 'Derick Jeter',
-  3: 'Babe Ruth',
-  4: 'Alex Gordon',
-  5: 'George Brett',
-  6: "Bill Russell",
-  7: 'Michael Bishop',
-  8: 'Troy Aikman',
-  9: "Ted Williams",
-  10: 'Trent Green',
-  11: "Eli Manning",
-  12: 'Tom Brady',
-  13: "Kurt Warner",
-  14: "Pete Rose",
-  15: 'Patrick Mahomes',
-  16: 'Len Dawson',
-  17: "Dizzy Dean",
-  18: 'Peyton Manning',
-  19: 'Johnny Unitas',
-  20: "Barry Sanders",
-  21: "Tim Duncan",
-  22: 'Emmit Smith',
-  23: 'Michael Jordan',
-  24: 'Kobe Bryant',
-  25: 'Jamaal Charles',
-  26: 'Eddie George',
-  27: 'Larry Johnson',
-  28: "Marshall Faulk",
-  29: 'Satchel Paige',
-  30: 'Nolan Ryan',
-  31: 'Reggie Miller',
-  32: 'Magic Johnson',
-  33: 'Kareem Abdul-Jabar',
-  34: 'Shaq',
-  35: 'Kevin Durant',
-  36: 'Jerome Bettis',
-  37: "Joe Delaney",
-  38: 'Curt Schilling',
-  39: 'Larry Csonka',
-  40: 'Gale Sayers',
-  41: 'Dirk Nowitzki',
-  42: 'Jackie Robinson',
-  43: 'Richard Petty',
-  44: 'Hank Aaron',
-  45: 'Pedro Martinez',
-  46: 'Andy Pettitte',
-  47: "Tom Glavine",
-  48: 'Jimmie Johnson',
-  49: 'Daniel Sorensen',
-  50: 'Justin Houston',
-  51: "Randy Johnson",
-  52: 'Ray Lewis',
-  53: "Don Drysdale",
-  54: 'Brian Urlacher',
-  55: 'Frank Clark',
-  56: 'Derrick Johnson',
-  57: "Clay Matthews",
-  58: 'Derrick Thomas',
-  59: "Jack Ham",
-  60: "Otto Graham",
-  61: 'Tim Grunhard',
-  62: 'Casey Wiegman',
-  63: 'Willie Lanier',
-  64: "Jerry Kramer",
-  65: "Ryan Lilja",
-  66: "Mario Lemieux",
-  67: "Reggie McKenzie",
-  68: 'Will Shields',
-  69: 'Jared Allen',
-  70: "Sam Huff",
-  71: 'Mitchell Schwartz',
-  72: 'Eric Fisher',
-  73: "John Hannah",
-  74: "Merlin Olsen",
-  75: "Mean Joe Greene",  
-  76: "Marion Motley",
-  77: 'Willie Roaf',
-  78: 'Bobby Bell',
-  79: 'Dave Szott',
-  80: 'Jerry Rice',
-  81: 'Terrell Owens',
-  82: 'Dante Hall',
-  83: "Andre Reed",
-  84: 'Randy Moss',
-  85: "Mark Boerigter",
-  86: "Buck Buchanan",
-  87: 'Travis Kelce',
-  88: 'Tony Gonzalez',
-  89: "Otis Taylor",
-  90: 'Neil Smith',
-  91: 'Dennis Rodman',
-  92: 'Reggie White',
-  93: "Dwight Freeney",
-  94: "Charles Haley",
-  95: 'Chris Jones',
-  96: "Cortez Kennedy",
-  97: "Kurt Busch",
-  98: "Tony Siragusa",
-  99: 'Wayne Gretzki'
-}
-function numLookup(num) {
-  if(athletes.hasOwnProperty(num)) {
-    return athletes[num];
-  } else {
-    return "Nobody ever wore that number"
+//Accessing Nested Arrays
+var myPlants = [
+  {
+    type: 'flowers',
+    list: [
+      'rose',
+      'tulip',
+      'mums'
+    ]
+  },
+  {
+    type: 'trees',
+    list:[
+      'fir',
+      'pine',
+      'birch'
+    ]
   }
+];
+var mySecondTree = myPlants[1].list[1];
+mySecondTree
+
+// Iterate w/ While Loops
+// var myArray = [];
+
+// var i = 0
+// while (i = 0; i < 5; i++) {
+//   myArray.push(i);
+  
+// }
+
+// console.log(myArray)
+
+// Iterate Using For Loops
+var ourArray = [];
+
+for (var i = 0; i < 5; i++) {
+  ourArray.push(i);
 }
-console.log(numLookup(38))
+
+var myArray = [];
+
+for (var i = 1; i < 6; i ++) {
+  myArray.push(i);
+}
+
+myArray
+
+// Iterate Odd Numbers with a For Loop
+var evenArray = [];
+for (var i = 0; i < 20; i += 2) {
+  evenArray.push(i);
+}
+evenArray
+
+var oddArray = [];
+for (var i = 1; i < 20; i += 2) {
+  oddArray.push(i);
+}
+oddArray
+
+// Generate Random Fractions
+function randomFunction() {
+
+  return Math.random();
+}
+console.log(randomFunction())
+
+// Generate Random Whole Numbers
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+function randomWholeNum() {
+
+  return Math.floor (Math.random() * 10);
+}
+
+console.log(randomWholeNum());
+
+// Generate Random Whole Number w/in a Range
+function ourRandomRange(ourMin, ourMax) {
+
+  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+}
+
+ourRandomRange(1, 9);
+
+function randomRange(myMin, myMax) {
+  
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+var myRandom = randomRange(5, 15);
+
+console.log(myRandom)
+
+// Use the parseInt Function
+function convertToInt(str) {
+  return parseInt(str)
+}
+console.log(convertToInt("53"))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
