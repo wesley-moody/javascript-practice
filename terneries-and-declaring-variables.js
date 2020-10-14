@@ -1,4 +1,4 @@
-/ // Use the Conditional (Ternary) Operator
+// // Use the Conditional (Ternary) Operator
 // function checkEqual(a, b) {
 //   if(a === b) {
 //     return true;
