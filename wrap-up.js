@@ -85,7 +85,7 @@ class Book {
   set writer(updatedAuthor) {
     this._author = updatedAuthor;
   }
-}
+} 
 
 function makeClass() {
   class Thermostat {
