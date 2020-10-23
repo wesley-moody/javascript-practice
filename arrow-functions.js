@@ -106,6 +106,28 @@ console.log(getMaxOfTmrw(LOCAL_FORECAST));
 x = [1, 2, 3, 4, 5]
 console.log(x);
 
+// Codepen
+function hof(num1, num2, callback) {
+	return callback(num1, num2);
+};
+
+const mult  = function(num1, num2) {
+	return num1 * num2;	
+}
+const sub = function(num1, num2) {
+	return num1 - num2
+}
+const div = function(num1, num2) {
+	return num1 / num2
+}
+const add = function(num1, num2) {
+	return num1 + num2
+}
+console.log(hof(33, 3, div))
+console.log(hof(5, 2, sub));
+console.log(hof(10, 5, mult))
+console.log(hof(30, 30, add))
+
 
 
 
