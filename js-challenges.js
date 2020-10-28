@@ -35,9 +35,32 @@ function mathSequences(arr) {
   return -1;
 }
 
-console.log(mathSequences([10, 20, 30, 40]));
-// "Arithmetic"
-console.log(mathSequences([2, 4, 8, 16]));
-// "Geometric"
-console.log(mathSequences([2, 5, 14, 89]));
-// -1
+// console.log(mathSequences([10, 20, 30, 40]));
+// // "Arithmetic"
+// console.log(mathSequences([2, 4, 8, 16]));
+// // "Geometric"
+// console.log(mathSequences([2, 5, 14, 89]));
+// // -1
+
+// Longest Words Challenges
+function longestWords(str) {
+  let words = str.split(' ')
+  let size = 0;
+  let max = [''];
+
+  for (let i = 0; i < words.length; i++) {
+    if(words[i].length >= size) {
+      size = words[i].length;
+      if(max[max.length - 1].length < words[i].length) {
+        max = [];
+        max.push(words[i])
+      } else {
+        max = [...max, words[i]];
+      }
+    }
+  }
+  return [...max];
+}
+
+console.log(longestWords("Where in the world is Carmen San Diego?"))
+console.log(longestWords("Three time fantasy football MSFF champion!"))
