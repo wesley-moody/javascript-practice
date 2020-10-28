@@ -1,15 +1,15 @@
-// // Return longest word in string
-// function longestWord (str) {
-//     let words = str.split(" ");
-//     let longestWord = '';
+// Return longest word in string
+function longestWord (str) {
+    let words = str.split(" ");
+    let longestWord = '';
 
-//   for(let word of words) {
-//     if(word.length > longestWord.length)
-//       longestWord = word;
-//   }
-//     console.log(longestWord)
-//     return longestWord;
-// }
+  for(let word of words) {
+    if(word.length > longestWord.length)
+      longestWord = word;
+  }
+    console.log(longestWord)
+    return longestWord;
+}
 
 // console.log(longestWord("Where in the world is Carmen San Diego?"))
 // console.log(longestWord("Three time fantasy football MSFF champion!"))
@@ -35,12 +35,12 @@ function mathSequences(arr) {
   return -1;
 }
 
-// console.log(mathSequences([10, 20, 30, 40]));
-// // "Arithmetic"
-// console.log(mathSequences([2, 4, 8, 16]));
-// // "Geometric"
-// console.log(mathSequences([2, 5, 14, 89]));
-// // -1
+console.log(mathSequences([10, 20, 30, 40]));
+// "Arithmetic"
+console.log(mathSequences([2, 4, 8, 16]));
+// "Geometric"
+console.log(mathSequences([2, 5, 14, 89]));
+// -1
 
 // Longest Words Challenges
 function longestWords(str) {
@@ -62,5 +62,23 @@ function longestWords(str) {
   return [...max];
 }
 
-console.log(longestWords("Where in the world is Carmen San Diego?"))
-console.log(longestWords("Three time fantasy football MSFF champion!"))
+// console.log(longestWords("Where in the world is Carmen San Diego?"))
+// console.log(longestWords("Three time fantasy football MSFF champion!"))
+
+// Capitalize First Letter in String
+function capitalizeWords(str) {
+  let words = str.split(" ").map(word => {
+    // let firstLetter = word.slice(0, 1);
+    // let remainder = word.slice(1);
+    // firstLetter = firstLetter.toUpperCase();
+    // // console.log(firstLetter, remainder);
+    // return `${firstLetter}${remainder}`
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+  // console.log(words);
+
+  return words.join(" ")
+}
+
+console.log(capitalizeWords("Where in the world is Carmen San Diego?"))
+console.log(capitalizeWords("Three time fantasy football MSFF champion!"))
