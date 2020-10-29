@@ -76,6 +76,7 @@ function capitalizeWords(str) {
     return word.charAt(0).toUpperCase() + word.slice(1);
   });
   // console.log(words);
+  
 
   return words.join(" ")
 }
